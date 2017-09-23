@@ -2,7 +2,9 @@
   "name": "code-matrix",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tetris0k.github.io/code-distance-by-generating-matrix",
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "reason-scripts": "0.6.9"
@@ -12,7 +14,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "prepare": "npm link bs-platform"
+    "prepare": "npm link bs-platform",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "bs-jest": "^0.1.0",
