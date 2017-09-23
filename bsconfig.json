@@ -1,0 +1,18 @@
+{
+  "name": "reason-scripts",
+  "sources": [
+    "src",
+    "src/amount",
+    "src/amountRow"
+  ],
+  "bs-dependencies": [
+    "reason-react",
+    "bs-jest"
+  ],
+  "reason": {
+    "react-jsx": 2
+  },
+  "bsc-flags": [
+    "-bs-super-errors"
+  ]
+}
